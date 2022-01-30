@@ -22,5 +22,9 @@
     "type": "git",
     "url": "https://github.com/navtrack/navtrack-shared.git"
   },
-  "typings": "dist/index.d.ts"
+  "typings": "dist/index.d.ts",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "public"
+  }
 }
