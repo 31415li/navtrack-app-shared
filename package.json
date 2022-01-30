@@ -1,0 +1,29 @@
+{
+  "name": "@navtrack/navtrack-shared",
+  "version": "1.0.0",
+  "description": "Shared library for the Navtrack web and mobile apps.",
+  "author": {
+    "name": "CodeAgency",
+    "email": "support@navtrack.com"
+  },
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rm -rf tsconfig.tsbuildinfo && npx tsc --build"
+  },
+  "prepublish": "tsc",
+  "devDependencies": {
+    "@types/react": "^17.0.38",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "react": "^17.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/navtrack/navtrack-shared.git"
+  },
+  "typings": "dist/index.d.ts",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  }
+}
