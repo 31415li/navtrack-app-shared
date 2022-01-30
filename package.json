@@ -1,6 +1,6 @@
 {
   "name": "@navtrack/navtrack-shared",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Shared library for the Navtrack web and mobile apps.",
   "author": {
     "name": "CodeAgency",
