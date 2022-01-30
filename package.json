@@ -24,7 +24,6 @@
   },
   "typings": "dist/index.d.ts",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com",
     "access": "public"
   }
 }
