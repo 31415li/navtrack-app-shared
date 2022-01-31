@@ -4,7 +4,7 @@
   "description": "Shared library for the Navtrack web and mobile apps.",
   "author": {
     "name": "CodeAgency",
-    "email": "support@navtrack.com"
+    "email": "contact@navtrack.com"
   },
   "main": "dist/index.js",
   "scripts": {
