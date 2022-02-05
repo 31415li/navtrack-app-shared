@@ -1,3 +1,4 @@
-export * from "./api/index";
-export * from "./hooks/index";
-export * from "./state/index";
+export * from "./api";
+export * from "./hooks";
+export * from "./state";
+export * from "./utils";
