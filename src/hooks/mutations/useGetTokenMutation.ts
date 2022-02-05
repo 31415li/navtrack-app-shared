@@ -1,5 +1,6 @@
 import { useMutation, UseMutationOptions } from "react-query";
 import { axiosInstance } from "../../api/axiosInstance";
+import { stringify } from "query-string";
 
 type TokenRequest = {
   grant_type: string;
@@ -29,11 +30,11 @@ export const useGetTokenMutation = (
 ) => {
   const query = useMutation(
     "connect/token",
-    (data: TokenRequest) =>
+    async (data: TokenRequest) =>
       axiosInstance<TokenResponse>({
         url: `/connect/token`,
         method: "post",
-        data: getURLSearchParams(data),
+        data: stringify(data),
         headers: {
           "Content-Type": "application/x-www-form-urlencoded"
         }
@@ -43,9 +44,3 @@ export const useGetTokenMutation = (
 
   return query;
 };
-
-function getURLSearchParams(object: any) {
-  const formData = new URLSearchParams();
-  Object.keys(object).forEach((key) => formData.append(key, object[key]));
-  return formData;
-}
