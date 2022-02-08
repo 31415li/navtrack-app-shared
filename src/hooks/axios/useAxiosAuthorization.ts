@@ -4,7 +4,7 @@ import { AUTH_AXIOS_INSTANCE } from "../../api/authAxiosInstance";
 import { authenticationAtom } from "../../state/app.authentication";
 import { axiosAtom } from "../../state/app.axios";
 
-export default function useAxiosAuthorization() {
+export const useAxiosAuthorization = () => {
   const authentication = useRecoilValue(authenticationAtom);
   const [axiosAuthState, setAxiosAuthState] = useRecoilState(axiosAtom);
 
@@ -44,4 +44,4 @@ export default function useAxiosAuthorization() {
     axiosAuthState,
     setAxiosAuthState
   ]);
-}
+};

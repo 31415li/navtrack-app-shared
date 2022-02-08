@@ -1,6 +1,6 @@
 {
-  "name": "@navtrack/navtrack-shared",
-  "version": "1.0.5",
+  "name": "@navtrack/navtrack-app-shared",
+  "version": "1.1.0",
   "description": "Shared library for the Navtrack web and mobile apps.",
   "author": {
     "name": "CodeAgency",
@@ -17,14 +17,19 @@
   "dependencies": {
     "@microsoft/signalr": "^6.0.1",
     "axios": "^0.25.0",
+    "formik": "^2.2.9",
+    "moment": "^2.29.1",
     "query-string": "^7.1.1",
     "react": "^17.0.2",
+    "react-intl": "^5.24.6",
     "react-query": "^3.34.12",
+    "react-router-dom": "^5.3.0",
     "recoil": "^0.6.1"
   },
   "devDependencies": {
     "@types/node": "^17.0.14",
     "@types/react": "^17.0.38",
+    "@types/react-router-dom": "^5.3.1",
     "@typescript-eslint/eslint-plugin": "^5.10.2",
     "@typescript-eslint/parser": "^5.10.2",
     "concurrently": "^7.0.0",

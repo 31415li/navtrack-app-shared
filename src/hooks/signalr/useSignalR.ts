@@ -15,7 +15,7 @@ type HubConnectionState = {
 
 const hubConnections: Record<string, HubConnectionState> = {};
 
-export default function useSignalR() {
+export const useSignalR = () => {
   const appContext = useRecoilValue(appContextSelector);
 
   const getAccessToken = useCallback(() => {
@@ -86,4 +86,4 @@ export default function useSignalR() {
   );
 
   return { invoke, on };
-}
+};
