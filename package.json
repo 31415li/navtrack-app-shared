@@ -9,7 +9,7 @@
   "scripts": {
     "build": "npx tsc --build",
     "build:watch": "npx tsc --build --watch",
-    "sync": "rm -rf ../navtrack-mobile/node_modules/@navtrack/navtrack-shared/dist/* && rm -rf ../navtrack/Navtrack.Web/ClientApp/node_modules/@navtrack/navtrack-shared/dist/* && cp -r ./dist/ ../navtrack-mobile/node_modules/@navtrack/navtrack-shared/dist/ && cp -r ./dist/ ../navtrack/Navtrack.Web/ClientApp/node_modules/@navtrack/navtrack-shared/dist/",
+    "sync": "rm -rf ../navtrack-mobile/node_modules/@navtrack/navtrack-app-shared/dist/* && rm -rf ../navtrack/Navtrack.Web/ClientApp/node_modules/@navtrack/navtrack-app-shared/dist/* && cp -r ./dist/ ../navtrack-mobile/node_modules/@navtrack/navtrack-app-shared/dist/ && cp -r ./dist/ ../navtrack/Navtrack.Web/ClientApp/node_modules/@navtrack/navtrack-app-shared/dist/",
     "sync:watch": "watch 'npm run sync' ./dist",
     "build:sync": "concurrently \"npm run build:watch\" \"npm run sync:watch\"",
     "generate": "orval --config ./orval.config.js"
