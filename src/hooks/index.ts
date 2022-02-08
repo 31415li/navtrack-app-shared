@@ -3,7 +3,7 @@ export * from "./authentication/useLogin";
 export * from "./authentication/useLogout";
 export * from "./axios/useAxiosAuthorization";
 export * from "./axios/useAxiosBaseUrls";
-export * from "./config/useFetchConfig";
+export * from "./config/useSetConfig";
 export * from "./app";
 export * from "./assets";
 export * from "./authentication";

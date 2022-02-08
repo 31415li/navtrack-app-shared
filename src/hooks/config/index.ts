@@ -1,1 +1,1 @@
-export * from "./useFetchConfig";
+export * from "./useSetConfig";
