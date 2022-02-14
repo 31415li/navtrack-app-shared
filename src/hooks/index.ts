@@ -14,3 +14,4 @@ export * from "./queries";
 export * from "./settings";
 export * from "./signalr";
 export * from "./util";
+export * from "./webView";

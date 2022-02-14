@@ -13,6 +13,12 @@ type HubConnectionState = {
   isConnected: boolean;
 };
 
+// TODO remove this
+// temporary fix https://github.com/dotnet/aspnetcore/issues/38286
+if (!globalThis.document) {
+  (globalThis.document as any) = undefined;
+}
+
 const hubConnections: Record<string, HubConnectionState> = {};
 
 export const useSignalR = () => {
@@ -35,7 +41,7 @@ export const useSignalR = () => {
               transport: HttpTransportType.WebSockets,
               accessTokenFactory: () => getAccessToken()
             })
-            .configureLogging(LogLevel.Critical)
+            .configureLogging(LogLevel.Warning)
             .withAutomaticReconnect()
             .build(),
           isConnected: false
