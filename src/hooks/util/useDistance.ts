@@ -44,5 +44,11 @@ export const useDistance = () => {
     [units.length]
   );
 
-  return { showSpeed, showDistance, showAltitude };
+  const showHeading = useCallback(
+    (heading?: number | null) =>
+      heading !== undefined && heading !== null ? `${heading}°` : "",
+    []
+  );
+
+  return { showSpeed, showDistance, showAltitude, showHeading };
 };
