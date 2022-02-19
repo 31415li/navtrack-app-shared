@@ -23,6 +23,7 @@ export const useLogin = (props: IUseLogin) => {
     onSuccess: (data) => {
       setState((current) => ({
         ...current,
+        initialized: true,
         isAuthenticated: true,
         token: {
           accessToken: data.access_token,
